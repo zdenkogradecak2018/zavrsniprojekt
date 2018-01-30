@@ -1,0 +1,282 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	background-color: #c5232d
+	;
+	
+}
+.header {
+	height: 500px;
+	background: url('img/hero-images.jpg') no-repeat;
+	background-size: cover;
+}
+.header a {
+	font-size: 24pt;
+	color: #fff	margin-top: 50px;
+	margin-left: 50px;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.header p {
+	font-size: 42pt;
+	color: #fff;
+	text-transform: lowercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	font-family: 'Lobster', cursive;
+}
+
+@media screen and (max-width:760px) {
+	.header {
+		height: 300px;
+	}
+	.header a {
+		display: none;
+	}
+	.header p {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		font-size: 32pt;
+	}
+}
+
+.main-menu {
+	width: 100%;
+	background-color:#630d13;
+}
+.main-menu li {
+	display: inline-block;
+	height: 100px;
+	transition: 3s;
+}
+.main-menu li a {
+	color: #FFF;
+	font-size: 18pt;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 100px;
+	display: block;
+}
+.main-menu li:hover {
+	background-color: #fff;
+}
+.main-menu li:hover a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+@media screen and (max-width:760px) {
+	.main-menu {
+		padding: 0;
+	}
+	.main-menu li {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
+.gallery img {
+	width: 100%;	
+}
+.gallery div {
+	padding: 0;
+}
+
+.overlay {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.image-container:hover .overlay {
+	opacity: 0.7;
+}
+
+.image-container:hover img {
+	filter: blur(3px);
+}
+.overlay p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 18pt;
+}
+.overlay p a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.contact-form {	
+	background-color: #630d13;
+	padding: 100px;
+}
+.contact-form h1 {
+	font-size: 24pt;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+
+.form-control {
+	height: 45px;
+	border-radius: 0;
+	border: 1px solid #000;
+}
+.form-control::placeholder {
+	color: #000;
+}
+.btn, .btn:hover {
+	padding: 15px 25px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 0;
+}
+.btn-default {
+	border: 0;
+}
+
+@media screen and (max-width:760px) {
+	.contact-form {
+		padding: 30px;
+	}
+}
+
+
+
+.footer {
+	height: 400px;
+	background: url('img/footer_bg.jpg') no-repeat;
+	background-size: cover;
+}
+.footer img {
+	margin: 100px 0 0 100px;
+}	
+.footer ul {
+	margin-top: 100px;
+	float: right;
+}
+.footer ul li{
+	display: inline-block;
+
+}
+.footer ul li a {
+	color: #fff;
+	font-size: 18pt;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: block;
+	text-decoration: none;
+}
+
+@media screen and (max-width:760px) { 
+	.footer img {
+		width: 50%;
+		margin: 80px auto 0 auto;
+		display: block;
+	}
+	.footer ul {
+		margin: 80px 0 0 0;
+		text-align: center;
+		float: none;
+	}
+	.footer ul li {
+		display: block;
+	}
+
+
+}
+
+.container {
+    background-color: white;
+}
+
+.section {
+	margin: 50px 0;
+	background-color: fff;
+}
+.square-blocks div {
+	height: 250px;
+}
+.square-blocks .light-gray-bg {
+	background-color: #254f6a;
+}
+.square-blocks .dark-gray-bg {
+	background-color: #de5728;
+}
+
+.square-blocks .light-grayz-bg {
+	background-color: #793891;
+}
+
+.square-blocks .dark-graylj-bg {
+	background-color: #5ead51;
+}
+
+
+.section h1 {
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration:underline overline #423131;
+	color: #423131;
+}
+.square-blocks p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18pt;
+}
+.about-me img,
+.article img {
+	width: 100%;
+}
+.about-me div,
+.article div {
+	padding: 0;
+}
+.about-me-text,
+.article-text {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+.section-title {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.square-blocks span {
+	font-size: 32pt;
+}
+.square-blocks a {
+	color: #000;
+}
+.square-blocks a:hover {
+	color: #F1C40F;
+	text-decoration: none;
+}
+#vegas {
+	height: 500px;
+}
